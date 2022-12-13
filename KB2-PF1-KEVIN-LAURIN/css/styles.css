@@ -1,0 +1,230 @@
+
+.menuLayout {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.menuLayout a {
+  min-width: 80px;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border-radius: 6px;
+  padding: 4px 20px 4px 20px;
+  /* top right bottom left*/
+}
+
+/* boutons 3 états à l'aide des sélecteurs :hover et :active */
+.menuLayout a:hover {
+  color: white;
+  background-color: black;
+}
+
+.menuLayout a:active {
+  background-color: gray;
+}
+
+.menuLayout .selected {
+  background-color: lightgray;
+}
+
+.content {
+  padding: 20px;
+  font-family: "Mochiy Pop One";
+}
+
+.content img {
+  width: 100%;
+}
+
+.content p {
+  text-align: justify;
+  font-size: 1.2em;
+  font-family: "Castoro";
+}
+
+.headerLayout {
+  display: grid;
+  grid-template-columns: 80px auto;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.headerLayout img {
+  width: 60px;
+  margin-left: 15px;
+}
+body {
+  overflow: scroll;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 1200px;
+  
+}
+
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.container, h1{
+  text-align: center;
+}
+.container, h3{
+  text-align: center;
+}
+
+.liste, li {
+  text-align: left;
+  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-left: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.image1{
+  width: 50%;
+    margin: 10px;
+}
+.image2{
+  width: 90%;
+    margin: 10px;
+    
+}
+.image3{
+  width: 70%;
+    margin: 10px;
+}
+
+.aaa {
+  text-align: center;
+}
+/* utilisation des flex pour colones*/
+.container1 {
+  overflow:auto;
+  margin:auto;
+  display:flex;
+  text-align: center;
+}
+
+.gauche {
+  background-color: black;  
+  color: rgb(255, 255, 255);
+  float: left;
+  width: 50%;
+  border: 2px red solid;
+}
+
+#droite {
+  float: right;
+  border: 2px red solid;
+  color: blanchedalmond;
+  background-color: black;
+  width: 50%
+  
+}
+
+p{
+  font-style: italic;
+}
+h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*fin du css flex */
+
+
+
+/* css des collum float */
+
+.container2:after {
+  content: "";
+  display: table;
+  margin: auto;
+  clear: both;
+}
+.colonne2{
+float: left;
+width: 50%;
+background-color: black;
+color: red;
+}
+.colonne2 > div {
+  padding: 20px;
+  border: 1px blue solid;
+}
+
+#boxes {
+  position: relative;
+}
+#box1 {
+  position: absolute;
+  height: 26%;
+  width: 9%;
+  background-color: rgba(255, 0 ,0 , 0.85 );
+  left: 31.5%;
+  top: 44%;
+  z-index: 3;
+}
+#box2 {
+  position: absolute;
+  height: 26%;
+  width: 9%;
+  background-color: rgba(0, 183, 255, 0.85);
+  left: 30%;
+  top: 40%;
+  z-index: 2;
+}
+/* css  fin des collum float */
+@media screen and (max-width: 600px) {
+
+  .menuLayout{
+    margin: auto;
+    column-count: 2;
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    width: auto;
+  }
+}
+@media screen and (max-width: 300px) {
+  body {
+    width: auto;
+  }
+}
+
+/* css des colspan row span*/
+table , td, th {
+	border: 1px solid #000000;
+	border-collapse: collapse;
+}
+td, th {
+	padding: 1px;
+	width: 50%;
+	height: 50%;
+  background-color: rgb(85, 46, 46);
+}
+.image4{
+  height: 25%;
+  width: 100%;
+  align-items: center;
+}
+
